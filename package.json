@@ -43,6 +43,7 @@
   },
   "dependencies": {
     "@types/webpack-dev-server": "^4.7.2",
+    "axios": "^1.6.0",
     "bootstrap": "^5.3.2",
     "vue": "^3.0.7",
     "vue-router": "^4.2.5"

@@ -100,8 +100,8 @@ export default {
         })
 
         try {
-            const res = await _fetchMovie(payload)
-            console.log(res)
+            const res = await _fetchMoive(payload)
+            console.log(res.data)
             commit('updateState', {
                 theMovie: res.data
             })

@@ -32,7 +32,7 @@ export default {
             }, 
             {
                 name : 'Movie',
-                href: '/movie'
+                href: '/movie/:id'
             }, 
             {
                 name: 'About',

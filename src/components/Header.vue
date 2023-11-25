@@ -9,6 +9,7 @@
         <RounterLink
           :to="nav.href"
           active-class="active"
+          :class="{ active : isMatch(nav.path)}"
           class="nav-link">
           {{ nav.name }}
         </RounterLink>
@@ -32,7 +33,8 @@ export default {
             }, 
             {
                 name : 'Movie',
-                href: '/movie/:id'
+                href: '/movie/:id',
+                path: /^\/movie/ // '/movie' 시작
             }, 
             {
                 name: 'About',
@@ -40,6 +42,13 @@ export default {
             }
             ]
         }
+    },
+    methods: {
+      isMatch(path) {
+        if (!path) return false
+        console.log(this.$route)
+        return path.test(this.$forceUpdate.fullpath)
+      }
     }
 }
 </script>

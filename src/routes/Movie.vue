@@ -221,5 +221,33 @@ color: $gray-600;
       font-size: 20px;
     }
   }
+  @include media-brakpoint-down(xl) {
+    .poseter {
+      width: 300px;
+      height: 300px * 3 / 2;
+      margin-right: 40px;
+    }
+  }
+  @include media-brakpoint-down(lg) {
+    display: block;
+    .poseter {
+      margin-bottom: 40px;
+    }
+  }
+  @include media-brakpoint-down(md) {
+    .specs {
+      .title {
+        font-size: 50px;
+      }
+      .rating {
+        .rating-wrap {
+          display: block;
+          .rating {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
 }
 </style>
